@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/Day3/style.css">
+        <title>Weather App</title>
+    </head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Weather App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.google.com/search?q=humidity&rlz=1C1UEAD_enPH980PH980&oq=humidity&gs_lcrp=EgZjaHJvbWUyFAgAEEUYORhDGIMBGLEDGIAEGIoFMg8IARAAGEMYsQMYgAQYigUyEggCEAAYQxiDARixAxiABBiKBTIMCAMQABhDGIAEGIoFMgwIBBAAGEMYgAQYigUyDAgFEAAYQxiABBiKBTIKCAYQABixAxiABDIHCAcQABiABDINCAgQABiDARixAxiABDIHCAkQABiABNIBCDE1NDlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&dlnr=1&sei=9E-nZcOcA9eF4-EPw_2i4AE">Humidity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.google.com/search?q=rainfall&rlz=1C1UEAD_enPH980PH980&oq=rainfall&gs_lcrp=EgZjaHJvbWUyDwgAEEUYORixAxjJAxiABDINCAEQABiSAxiABBiKBTIKCAIQABixAxiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDINCAgQABiDARixAxiABDIHCAkQABiABNIBCDExODdqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8">Rainfall</a>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <!--Jumbotron-->
+    <div class="jumbotron">
+        <h1 class="display-4">The Weather Weather App!</h1>
+        <p class="lead">Get the latest weather updates, humidity, rainfall and other storm warnings!</p>
+        <hr class="my-4">
+        <p>Click the button below to download the app.</p>
+        <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Download</a>
+        </p>
+    </div>
+    <!--Hero Section-->
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+            <img src="/Day3/weatherphone.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">This weather app is very responsive.</h1>
+                <p class="lead">Designed using the latest version of bootstrap. With real time updates from Openweathermap.org</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get for Android</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Get for iOS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--Form-->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                    <h5 class="card-title">Check the temperature in your city</h5>
+                    </div>
+                    <div class="card-body">
+                    <form id="weatherForm">
+                        <div class="form-group">
+                            <label for="cityInput">Enter City:</label>
+                            <input type="text" class="form-control" id="cityInput" placeholder="Enter city name" required>
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="getWeather()">Get Weather</button>
+                    </form>
+                    <div id="weatherResult" class="mt-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+	<footer>
+        <div class="text-center text-black p-3" style="background-color: rgba(180, 180, 180, 0.2);">
+            © 2024 Copyright:
+            <a class="text-black" href="https://google.com/">All rights reserved. </a>
+        </div>
+	</footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    function getWeather() {
+        var city = document.getElementById('cityInput').value;
+        var resultDiv = document.getElementById('weatherResult');
+
+        
+        var apiKey = 'e1daa83d7e6e2b1d39de920412ad8638';
+        var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                var temperatureCelsius = data.main.temp - 273.15;
+                var temperatureFahrenheit = (temperatureCelsius * 9/5) + 32;
+
+                var resultHTML = `
+                    <p>Temperature in Celsius: ${temperatureCelsius.toFixed(2)} &#8451;</p>
+                    <p>Temperature in Fahrenheit: ${temperatureFahrenheit.toFixed(2)} &#8457;</p>
+                `;
+
+                resultDiv.innerHTML = resultHTML;
+            })
+            .catch(error => {
+                resultDiv.innerHTML = '<p>Error fetching weather data. Please try again.</p>';
+            });
+    }
+</script>
+</html>

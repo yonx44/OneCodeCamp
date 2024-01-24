@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angel's Pizza</title>
+        <link rel="stylesheet" href="/Day2/styles.css"
+    </head>
+
+    <body>
+        <h2>Pizza Order Form</h2>
+        <form>
+            <label for="fname"> First name:</label><br>
+            <input type="text" id="fname" name="fname">
+            <br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+            <br>
+            <label for="email"> Email Address:</label><br>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="fname"> Contact Number:</label><br>
+            <input type="number" id="number" name="number">
+        </form> 
+        <br>
+        <form action="/action_page.php">
+            <label for="deliverydate">Delivery Date:</label>
+            <input type="date" id="deliverydate" name="deliverydate">
+            <input type="submit">
+          </form>
+        <br>
+        <p class="font">Size:</p>
+        <form>
+            <input type="radio" id="small" name="size" value="Small">
+            <label for="small">Small</label>
+
+            <input type="radio" id="medium" name="size" value="Medium">
+            <label for="medium">Medium</label>
+
+            <input type="radio" id="large" name="size" value="Large">
+            <label for="large">Large</label>
+        </form>
+        <p>Flavor:</p>
+        <form>
+            <input type="radio" id="hawaiian" name="hawaiian" value="Hawaiian">
+            <label for="quantity">Hawaiian (PHP 150.00)</label>
+            <select name="quantity" id="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <br>
+            <input type="radio" id="pepperoni" name="pepperoni" value="Pepperoni">
+            <label for="quantity">Pepperoni (PHP 140.00)</label>
+            <select name="quantity" id="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <br>
+            <input type="radio" id="vegetable" name="vegetable" value="Vegetable">
+            <label for="quantity">Vegetable (PHP 130.00)</label>
+            <select name="quantity" id="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </form>
+        <br>
+        <form>
+            <label for="creditcard">Credit Card Number:</label><br>
+            <input type="number" id="creditcard" name="creditcard">
+            <br>
+            <label for="pin">PIN:</label><br>
+            <input type="number" id="pin" name="pin">
+            <br>
+        </form> 
+        <p>Additional Note:</p>
+        <form>
+            <textarea name="paragraph_text" cols="35" rows="10"></textarea>
+        </form> 
+        <br>
+        <form>
+            <input type="submit" value="Submit">
+        </form>  
+    </body>
+</html>
