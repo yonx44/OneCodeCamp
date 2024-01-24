@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    color: red;
+    background-color: rgb(1, 255, 136);
+    border: red 5px;
+    padding: 20px;
+    margin: 30px;
+}
+
+.font {
+    color:blue;
+}
+
+#cat {
+    color: pink;
+    color: green;
+    border: ;
+}
+
+li {
+    display: inline-block;
+}
