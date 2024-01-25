@@ -27,6 +27,7 @@ console.log(message1);
 console.log(message2);
 console.log(message3);
 
+
 //Back ticks read spaces
 let message = `This is 
 a multi-line
@@ -115,7 +116,7 @@ console.log(grades2);
 
 */
 
-/*
+
 //4-1 Arrow Function
 const Square = (number) => number * number;
 
@@ -171,19 +172,20 @@ console.log(`Area with default parameters: ${defaultArea}`);
 
 const customArea = RectangleArea(8, 5);
 console.log(`Area with custom parameters: ${customArea}`);
-*/
+
 
 //String methods
+
 //split
 
 const message = "Hello, World!";
-const words = message.split("h")
+const words = message.split("r")
 
 console.log(words);
 
 //includes
 
-const sentence = "The quick brown fox over the lazy dog.";
+const sentence = "The quick brown fox jumps over the lazy dog.";
 const containsWord = sentence.includes("apple");
 
 console.log(containsWord);
@@ -194,6 +196,7 @@ const strLength = sampleString.length;
 console.log(strLength);
 
 //math methods
+
 //max 
 
 const maxNumber = Math.max(10, 5, 20);
@@ -222,7 +225,7 @@ const rounddownNumber = Math.round(3.4);
 console.log(rounddownNumber);
 
 //round up
-const roundupNumber = Math.round(3.7);
+const roundupNumber = Math.round(3.5);
 console.log(roundupNumber);
 
 //nested math methods
