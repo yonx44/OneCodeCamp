@@ -46,7 +46,7 @@ const Navbar = () => {
               <div>
                 <img className="w-32" src={logo} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
-                "I am a passionate MERN stack developer and machine learning enthusiast. With a strong foundation in web development and a keen eye for data, I create innovative solutions that bridge technology and user experience."
+                "I am a passionate programmer and machine learning enthusiast. With a strong foundation in web development and a keen eye for data, I create innovative solutions that bridge technology and user experience."
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -75,13 +75,16 @@ const Navbar = () => {
                 </h2>
                 <div className="flex gap-4">
                   <span className="bannerIcon">
-                    <SiGithub />
+                  <a href="https://github.com/yonx44" target="_blank" rel="noopener noreferrer">
+                    <SiGithub /></a>
                   </span>
                   <span className="bannerIcon">
-                    <SiGmail />
+                  <a href="mailto:sanderlawrence@gmail.com">
+                    <SiGmail /></a>
                   </span>
                   <span className="bannerIcon">
-                    <FaLinkedinIn />
+                  <a href="https://www.linkedin.com/in/dion-eliot-ect-650249211/" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedinIn /></a>
                   </span>
                 </div>
               </div>

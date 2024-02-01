@@ -12,27 +12,27 @@ const Education = () => {
       {/* part one */}
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2005 - 2024</p>
+          <p className="text-sm text-designColor tracking-[4px]">2007 - 2020</p>
           <h2 className="text-3xl md:text-4xl font-bold">Educational Qualification</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="BTech in Information Technology"
-            subTitle="Veermata Jijabai Technological Institute (2020 - 2024)"
-            result="7.5 CPI"
-            des="Studied IT related subjects like Operating Systems, DBMS, OOPS, ML, Web Development, AI, DSA, Compiler Design etc."
+            title="Bachelor of Science in Electronics and Communications Engineering"
+            subTitle="University of San Carlos (2015 - 2020)"
+            result="1.3 GPA"
+            des="Electrical and Computer Engineering (ECE) involves studying the design and optimization of electrical systems, electronics, and computer technology."
           />
           <ResumeCard
-            title="Higher Secondary Education"
-            subTitle="Rustomjee International School and Junior College (2018 - 2020)"
-            result="88.15%"
-            des="Studied in this school from 11th to 12th std. HSC Subjects: PCM, English, Electrical Maintenance, Environment Education. "
+            title="Highschool Education"
+            subTitle="Rosemont Hills Montessori College  (2011 - 2015)"
+            result="90%"
+            des="Studied in this school from Grade 8 until Grade 12. Still learned how to use chopsticks."
           />
           <ResumeCard
-            title="Primary & Secondary School Education"
-            subTitle="Rustomjee International School (2005 - 2018)"
-            result="94.20% "
-            des="Studied in this school from Nursery to 10th std. SSC Subjects: English, Hindi-French, Marathi, Maths, Science, Social Sciences."
+            title="Secondary School Education"
+            subTitle="Rosemont Hills Montessori Academy (2007 - 2011)"
+            result="90%"
+            des="Studied in this school from Grade 3 until Grade 6. Learned how to use chopsticks."
           />
         </div>
       </div>
