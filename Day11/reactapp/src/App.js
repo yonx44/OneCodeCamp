@@ -59,6 +59,7 @@
 import React, { useState } from 'react';
 import { Container, Navbar, Nav, NavDropdown, Carousel, Pagination, Row, Col, Card, Form, Button, Toast } from 'react-bootstrap';
 import CarouselImage from './Components/CarouselImage';
+import ContactUs from './Components/ContactUs';
 
 const styles = {
   container: {
@@ -86,6 +87,17 @@ const BasicExample = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [showToast, setShowToast] = useState(false);
 
+  const App = () => {
+    return (
+      <Router>
+        <Switch>
+          <Route exact path="/" component={BasicExample} />
+          <Route path="/contact-us" component={ContactUs} />
+        </Switch>
+      </Router>
+    );
+  };
+  
   
   const cardGrid = [];
   for (let i = 1; i <= 12; i++) {
