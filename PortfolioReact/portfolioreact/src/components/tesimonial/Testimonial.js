@@ -93,7 +93,7 @@ const Testimonial = () => {
       className="w-full py-20 border-b-[1px] border-b-black"
     >
       <div className="flex justify-center items-center text-center">
-        <Title title="WHAT CLIENTS SAY" des="Testimonial" />
+        <Title title="Character References" des="Testimonial" />
       </div>
       <div className="max-w-6xl mx-auto">
         {/* ================ Slider One ================== */}
@@ -108,11 +108,12 @@ const Testimonial = () => {
                 />
                 <div className="w-full flex flex-col justify-end">
                   <p className="text-xs uppercase text-designColor tracking-wide mb-2">
-                    Spider Man
+                    ECE Department Head
                   </p>
-                  <h3 className="text-2xl font-bold">Peter Parker</h3>
+                  <h3 className="text-2xl font-bold">Edward Querikiol, D. Eng</h3>
                   <p className="text-base tracking-wide text-gray-500">
-                    Sr. Web Developer
+                  Faculty | Department of Electronics and Electrical
+                  Engineering (DEEE) | University of San Carlos
                   </p>
                 </div>
               </div>
@@ -155,11 +156,13 @@ const Testimonial = () => {
                 />
                 <div className="w-full flex flex-col justify-end">
                   <p className="text-xs uppercase text-designColor tracking-wide mb-2">
-                    Iron Man
+                  CBELS Laboratory Head
                   </p>
-                  <h3 className="text-2xl font-bold">Tony Stark</h3>
+                  <h3 className="text-2xl font-bold">Alberto Banacia, M.Eng</h3>
                   <p className="text-base tracking-wide text-gray-500">
-                    Sr. Data Scientist
+                  Faculty | Communications and Broadcasting
+                  Engineering Laboratory Section (CBELS) | University of San Carlos
+
                   </p>
                 </div>
               </div>
@@ -202,11 +205,12 @@ const Testimonial = () => {
                 />
                 <div className="w-full flex flex-col justify-end">
                   <p className="text-xs uppercase text-designColor tracking-wide mb-2">
-                    Tech Visionary
+                    Sales Admin
                   </p>
-                  <h3 className="text-2xl font-bold">Sundar Pichai</h3>
+                  <h3 className="text-2xl font-bold">Quennie Noreen Aniceto</h3>
                   <p className="text-base tracking-wide text-gray-500">
-                    Google CEO
+                  Sales Admin | AppleOne Mactan Inc. | Sheraton Hotels and
+                  Resorts
                   </p>
                 </div>
               </div>
